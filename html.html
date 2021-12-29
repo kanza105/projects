@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>HPA</title>
+</head>
+
+<style type="text/css">
+
+
+
+body{
+    
+ font-family: 'Times New Roman', Times, serif;
+}*{
+ margin: 0px;
+ padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.neons {
+   margin-top: 10rem;
+   text-align: center;
+}
+
+.neons h1 {
+  font-size: 6.5rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+         text-align: center;
+      color: lightblue;
+    text-shadow: 0 0 10px #8a2be2, 0 0 20px #8a2be2, 0 0 30px #8a2be2, 0 0 40px #8a2be2, 0 0 50px #8a2be2, 0 0 60px #8a2be2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  
+  to {
+      text-align: center;
+     color: gray;
+    text-shadow: 0 0 20px #8a2be2, 0 0 30px #8a2be2, 0 0 40px #8a2be2, 0 0 50px #8a2be2, 0 0 60px #8a2be2, 0 0 70px #8a2be2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}
+
+
+body{
+    background-image: url(backgroundimage.jpg);
+   background-size: cover;
+   background-position: center;
+  
+   font-family: sans-serif;
+}
+
+.Menu 
+{
+    background-color: #8a2be2;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.Menu ul {
+    display: inline-flex;
+    list-style: none;
+    color: navajowhite;
+}
+.Menu ul li{
+    width: 160px;
+    margin: 15px;
+    padding: 15px;
+}
+.Menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active, .Menu ul li:hover
+{
+    background: #2575fc;
+    border-radius: 3px;
+}
+.sub-menu-1{
+    display: none;
+}
+.Menu ul  li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: #8a2be2;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.Menu ul  li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.Menu ul  li:hover .sub-menu-1 ul li
+{
+    color: violet;
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px double white;
+    background: transparent;
+     border-radius: 0;
+     text-align: left;
+}
+.Menu ul  li:hover .sub-menu-1 ul li :last-child{
+    border-bottom: none;
+}
+.Menu ul  li:hover .sub-menu-1 ul li a:hover{
+    color: #2575fc;
+}
+.Sub-menu-2{
+    display: none;
+}
+.hover-me:hover .Sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin: -40px;
+    margin-left: 140px;
+    background-color: #8a2be2;
+}
+
+.main{
+
+ margin: 2%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+.content h1{
+    position: absolute;
+    color: azure;
+    transform: translate(-50%,-50%);
+    font-size: 100em;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #8a2be2;
+    padding: 70px 0;
+    height: 350px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color:azure;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #2575fc;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: azure;
+	text-decoration: none;
+	font-weight: 300;
+	color: azure;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: azure;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 20px 20px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: azure;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: azure;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px gray;
+     border-radius: 5px; 
+     margin: 2%;
+     justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #6a11cb 30%, #2575fc 100%);
+     
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  color: azure;
+  
+ }
+
+h2{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ color: azure;
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: #ba55d3;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color:#2575fc;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+</style>
+<head>
+<body style="background: #242582;">
+    
+    <script src="https://kit.fontawesome.com/725254f5bd.js" crossorigin="anonymous"></script>
+    <div class="Menu" >
+        <ul>
+    <ul>
+        <li class="active"><a href="#"><i class="fa fa-home"></i> Home </a> </li>
+        <li><a href="#"> <i class="fas fa-user"></i> About Us </a>
+
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"> <i class="fa fa-blog"></i> Blogs </a>
+    
+        <li><a href="#"> <i class="fa fa-stopwatch"></i> Fixtures </a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li class="hover-me"><a href="#">LaLiga</a>
+                        <div class="Sub-menu-2">
+                            <ul>
+                                <li><a href="#"> FCB Vs RMA </a></li>
+                                <li><a href="#"> SEV Vs ATL MAD </a></li>
+                                <li><a href="#">LEV Vs GRA </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hover-me"><a href="#">T20 WC</a> 
+                    <div class="Sub-menu-2">
+                        <ul>
+                            <li><a href="#"> PAK Vs IND </a></li>
+                            <li><a href="#">SA Vs WI</a></li>
+                            <li><a href="#">NZ Vs ENG</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="hover-me"><a href="#"></i>Hockey</a> 
+                        <div class="Sub-menu-2">
+                            <ul>
+                                <li><a href="#"> PAK Vs NIG </a></li>
+                                <li><a href="#">AUS Vs IND</a></li>
+                               
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="hover-me"><a href="#">Tennis</a>
+                        <div class="Sub-menu-2">
+                            <ul>
+                                <li><a href="#"> AND Vs NOVAK </a></li>
+                                <li><a href="#">SER VS MAR</a></li>
+                               
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"> <i class="fa fa-store"></i> Store </a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Kids' Wear</a></li>
+                    <li><a href="#">Newly-Arrived Jerseys</a></li>
+                </ul>
+            </div>
+        </li>
+        <li><a href="#"> <i class="fa fa-phone"></i> Find Us </a>
+       
+    </ul>
+</div>
+<div class="container">
+    <div class="row">
+       <div class="neons col-12">
+          <h1 style="text-align: center;"><em>-Highest Paid Athelets-</em></h1>
+       </div>
+    </div>
+ </div>
+
+ <!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\Conor McGregor.jpg">
+</div>
+<div class="title">
+ <h2>
+    Conor McGregor </h2>
+</div>
+<div class="des">
+ <p> <b> Sport:</b> Boxing</p>
+ <p> <b> Salary:</b> $61M</p>
+ <p> <b> Endorsements:</b> $2M	</p>
+ <p> <b> Total:</b> $63M </p>
+<button>Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\messi.jpg">
+</div>
+<div class="title">
+ <h2>
+Lionel Messi </h2>
+</div>
+<div class="des">
+    <p> <b> Sport:</b> Football</p>
+    <p> <b> Salary:</b> $40M</p>
+    <p> <b> Endorsements:</b> $10M	</p>
+    <p> <b> Total:</b> $50M </p>
+<button>Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\Dak Prescott.jpg">
+</div>
+<div class="title">
+ <h2>
+Dak Prescott</h2>
+</div>
+<div class="des">
+    <p> <b> Sport:</b> American Football</p>
+    <p> <b> Salary:</b> $30M</p>
+    <p> <b> Endorsements:</b> $5M	</p>
+    <p> <b> Total:</b> $35M </p>
+<button>Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\LeBron James.jpg">
+</div>
+<div class="title">
+ <h2>
+LeBeron James</h2>
+</div>
+<div class="des">
+    <p> <b> Sport:</b> Basketball</p>
+    <p> <b> Salary:</b> $30M</p>
+    <p> <b> Endorsements:</b> $2M	</p>
+    <p> <b> Total:</b> $32M </p>
+<button>Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\Lewis Hamilton.jpg">
+</div>
+<div class="title">
+ <h2>
+Lewis Hamilton </h2>
+</div>
+<div class="des">
+    <p> <b> Sport:</b> Formula One</p>
+    <p> <b> Salary:</b> $28M</p>
+    <p> <b> Endorsements:</b> $2M	</p>
+    <p> <b> Total:</b> $30M </p>
+<button>Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\Roger Federer.jpg">
+</div>
+<div class="title">
+ <h2>
+Roger Federer</h2>
+</div>
+<div class="des">
+    <p> <b> Sport:</b> Tennis</p>
+    <p> <b> Salary:</b> $25M</p>
+    <p> <b> Endorsements:</b> $2M	</p>
+    <p> <b> Total:</b> $27M </p>
+<button>Read More...</button>
+</div>
+</div>
+<!--cards -->
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\Tiger Woods.jpg">
+</div>
+<div class="title">
+ <h2>
+Tiger Woods </h2>
+</div>
+<div class="des">
+    <p> <b> Sport:</b> Golf</p>
+    <p> <b> Salary:</b> $20M</p>
+    <p> <b> Endorsements:</b> $2M	</p>
+    <p> <b> Total:</b> $22M </p>
+<button>Read More...</button>
+
+</div>
+</div>
+<!--cards -->
+
+
+<div class="card">
+
+<div class="image">
+   <img src="C:\Users\Kanza\Downloads\WP\eCom\Canelo Alvarez.jpg">
+</div>
+<div class="title">
+ <h2>
+    Canelo Alvarez </h2>
+</div>
+<div class="des">
+    <p> <b> Sport:</b> Boxing</p>
+    <p> <b> Salary:</b> $18M</p>
+    <p> <b> Endorsements:</b> $2M	</p>
+    <p> <b> Total:</b> $20M </p>
+<button>Read More...</button>
+</div>
+</div>
+    </div>
+</div>
+<!------Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#"> Our Vision</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">IND Vs PAK</a></li>
+                    <li><a href="#">FCB Vs RMA</a></li>
+                    <li><a href="#">Fantasy League</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Store</h4>
+                <ul>
+                    <li><a href="#">Signed Jerseys</a></li>
+                    <li><a href="#">Water Bottles</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Kids' Wear</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <p style="color: azure;"> <b>Email: </b> abcsports@gmail.com></p>
+                <p style="color: azure;"> <b>Phone: </b>+1 551-226-6056</p>
+                <br>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</head>
+</html>
+
+   
